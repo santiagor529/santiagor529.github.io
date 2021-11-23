@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            Lab 2
+        </title>
+    </head>
+    <script>
+        function convert()
+        {
+            var yen=document.getElementById("USD").value * 109.58;
+            document.getElementById("JPY").value = yen.toFixed(2);
+        }
+        function convert2() 
+        {
+            var yen=document.getElementById("JPY").value / 109.58;
+            document.getElementById("USD").value = yen.toFixed(2);
+        };
+    </script>
+    <body>
+        <header>
+            Ricardo Santiago
+            <p>
+                Lab 2 Currency Converter
+            </p>
+        </header>
+        $ <input type="number" id="USD"><button onclick="convert()">Convert to Yen</button>
+        <p>
+            ¥   <input type="number" id="JPY"><button onclick="convert2()">Convert to USD</button>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<html>
+    <script>   
+        function change()
+        {
+            var header = document.getElementById("header");
+            var text = document.getElementById("text");
+            header.innerHTML = text.value
+        }
+
+        function ColorChange()
+        {
+            var Color = document.getElementById("colors").value;
+            var header= document.getElementById("header");
+
+            if(Color == "Green")
+            {
+                header.style.color="green"
+            }
+            else if(Color == "Blue")
+            {
+                header.style.color="blue"
+            }
+            else if (Color == "Red")
+            {
+                header.style.color="red"
+            }
+            else if(Color == "White")
+            {
+                alert("This color is the same as the background and you won't be able to see the text.");
+            }
+        }
+    </script>
+    <head>
+        <title>
+            Ricardo Santiago Midterm
+        </title>
+    </head>
+    <h1 id="header">
+        Ricardo Santiago
+    </h1>
+    <body>
+        Add some text: <input type="text" id="text"><button onclick= "change()">Submit</button>
+        <p>
+            <label for="color">Pick a color:</label>
+
+            <select name="color" id="colors" onchange="ColorChange()">
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+                <option value="Red">Red</option>
+                <option value="White">White</option>
+            </select>
+        </p>
+    </body>
+    <style>
+        #header
+        {
+            color: green;
+        }
+    </style>
+</html>

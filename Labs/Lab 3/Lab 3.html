@@ -1,0 +1,51 @@
+<html>
+    <link rel="stylesheet" href="Lab 3 css.css">
+    <script src="TheScript.js"></script> 
+    <head>
+        <title>
+            Lab 3 Landmarks
+        </title>
+    </head>
+    
+    <body>
+        <header>
+           <h1>
+                Ricardo Santiago
+            </h1>
+            <p>
+                <h1>
+                    Lab 3
+                </h1>
+            </p>
+        </header>
+        <img src="Images/Colosseum.jpg" id="landmark" width="500"> 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.122888131329!2d12.490042215682005!3d41.890214172634636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b6532013ad%3A0x28f1c82e908503c4!2sColosseum!5e0!3m2!1sen!2sus!4v1633312908427!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" id="Map"></iframe>
+        <p>
+            <div id="Description">The Colosseum is the largest ancient amphitheatre ever built. It opened in 80AD in Rome, Italy.</div>
+        </p>
+        <p>
+            <form>
+                <input type="radio" id="Rome" name="Landmarks" value="Colosseum" onclick="change()">
+                <label for="Rome">The Roman Colosseum</label><br>
+
+                <input type="radio" id="London" name="Landmarks" value="BigBen" onclick="change()">
+                <label for="London">Big Ben</label><br>
+
+                <input type="radio" id="Australia" name="Landmarks" value="Sydney" onclick="change()">
+                <label for="Australia">Sydney Opera House</label>
+            </form>
+        </p>
+        <p>
+            <label for="Size">Pick a size:</label>
+
+            <select name="Size" id="sizes" onchange="resize()">
+                <option value="Medium">Medium</option>
+                <option value="Small">Small</option>
+                <option value="Large">Large</option>
+            </select>
+        </p>
+    </body>
+    <footer>
+        Ricardo Santiago Lab 3
+    </footer>
+</html>

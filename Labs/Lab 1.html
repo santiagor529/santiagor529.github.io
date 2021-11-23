@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 1</title>
+    </head>
+    <script>
+        var today = new Date();
+        var hour = today.getHours();
+        if(hour < 12) {
+            alert("Good Morning");
+        }
+        if(hour >= 12 && hour <18) {
+            alert("Good Afternoon");
+        }
+        if(hour > 18) {
+            alert("Good Evening");
+        }
+        var dollar = prompt("Choose a dollar amount");
+        alert("$" + dollar + " Is the equivalent of ¥" + 109.38 * dollar);
+    </script>
+    <body>
+        Ricardo Santiago
+        <p>
+            Lab 1
+        </p>
+        <p>
+            Currency Converter
+        </p>
+    </body>
+</html>

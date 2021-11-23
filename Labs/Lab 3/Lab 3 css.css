@@ -1,0 +1,17 @@
+body
+{
+	background-color: #85c9e0;
+}
+#description 
+{
+	background-color: lightblue;
+	width: 300px;
+           margin-top: -16px;
+	margin-left: 5px;
+           text-align:center;
+}
+footer
+{
+	background-color: lightblue;
+	text-align: center;
+}

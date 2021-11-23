@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Lab 7.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="Lab 7 Script.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-database.js"></script>
+        <title>
+            Ricardo Santiago Lab 7
+        </title>
+    </head>
+    <body>
+        <h1>
+            Lab 7 APIs
+        </h1>
+        <h2>
+            Cats or Dogs: Click to vote for your favorite
+        </h2>
+        <div>
+            <table id="table" align="center">
+                <tr>
+                    <th>
+                        <img src="https://api.thecatapi.com/v1/images/search?format=src&size=full" height="200px" id="cat">
+                    </th>
+                    <th>
+                        <img src="https://api.thedogapi.com/v1/images/search?format=src&size=full" height="200px" id="dog">
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <span id="catvotes">Cat Votes: </span>
+                    </td>
+                    <td>
+                        <span id="dogvotes">Dog Votes: </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
